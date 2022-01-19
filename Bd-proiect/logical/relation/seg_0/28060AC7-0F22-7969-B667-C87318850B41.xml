@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Problema_Contract_FK" directorySegmentName="seg_0" id="28060AC7-0F22-7969-B667-C87318850B41">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 06:47:08 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<sourcePk>841A664F-B93D-7B60-9EC9-35B1C6ACCF0C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>putem identifica</nameOnSource>
+<nameOnTarget>se ragaseste</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>20BE6521-753D-D395-3960-3C91C4C83156</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7F13D7B8-D2D5-16F1-7BF5-9BC855DE4884</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

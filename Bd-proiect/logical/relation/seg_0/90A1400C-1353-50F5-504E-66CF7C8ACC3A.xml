@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Contract_Vehicul_FK" directorySegmentName="seg_0" id="90A1400C-1353-50F5-504E-66CF7C8ACC3A">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 23:05:56 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<sourcePk>2CFCAF01-D87F-6A16-8B41-4636509177FB</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este inchiriat prin</nameOnSource>
+<nameOnTarget>inchiriaza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2EB248EB-C775-6818-325C-2F98AD23D919</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>20BE6521-753D-D395-3960-3C91C4C83156</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

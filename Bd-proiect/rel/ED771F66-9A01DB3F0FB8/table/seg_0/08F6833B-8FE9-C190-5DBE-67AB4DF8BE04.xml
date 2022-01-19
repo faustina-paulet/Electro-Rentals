@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08F6833B-8FE9-C190-5DBE-67AB4DF8BE04" name="Mecanic">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>CC0A10FF-6760-C53D-97C2-FE94B53F5962</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_mecanic" id="6D322735-8B8C-236E-DD0B-E4FF392A7BC0">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>D7BDEDDC-96C0-37E4-E32F-5984987DE5CD</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="6C36CD0D-D5C7-A2B6-5129-29EB18E2F278">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>4B3E3371-37DF-E9E0-6FF3-F8CE279F8160</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Nume_mecanic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt;= 2 AND REGEXP_LIKE ( Nume, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenume" id="5F8CB0F8-87E6-A044-6A93-CF6C062463DB">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>5740EC98-A1B6-EF34-2795-08540168064D</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Prenume_mecanic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Prenume) &gt;= 2 AND REGEXP_LIKE ( Prenume, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="C7C160C2-D002-57DD-0134-5CFF89EEE1BF">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>5E728B82-DE82-80D3-DDB6-1D9F5A5197DF</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Email_mecanic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_telefon" id="DC8178F8-EB51-18A1-D008-9EE09C2CCAD2">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>9DF9C405-A989-47C7-933B-70139DE9BBA2</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Nr_telefon_mecanic</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nr_telefon) = 10 AND REGEXP_LIKE ( Nr_telefon,  &apos;^[0][:7:3:2][0-9 ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="067C362A-D1F2-C220-F6DC-724164CC6DB7" name="Mecanic_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>5CD15FEA-7A7B-479D-4E05-DF0D86AF5F8A</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D322735-8B8C-236E-DD0B-E4FF392A7BC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFA73139-4E2B-E679-E656-159F8B892F59" name="Email_mec_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:07:20 UTC</createdTime>
+<generatorID>DD7CB3AA-2C53-5E10-C4AC-F79362092CEC</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7C160C2-D002-57DD-0134-5CFF89EEE1BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F9D4ED5-0F31-D49A-702C-D058E80FC0C4" name="Nr_telefon_mec_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:07:20 UTC</createdTime>
+<generatorID>A55A4678-CC38-BE6A-31FB-B7AD5EF34999</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC8178F8-EB51-18A1-D008-9EE09C2CCAD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

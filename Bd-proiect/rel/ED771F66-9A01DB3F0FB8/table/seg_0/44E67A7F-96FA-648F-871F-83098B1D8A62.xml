@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44E67A7F-96FA-648F-871F-83098B1D8A62" name="Problema">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>7F13D7B8-D2D5-16F1-7BF5-9BC855DE4884</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_problema" id="C8D74B38-F7ED-AED5-B33B-CE38FBC6A576">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>9A325BD9-FCBE-1194-4BB9-D61B1340A7C9</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descriere_problema" id="00D6BDBF-75D3-54D8-E3A7-E8E70CCC108F">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>EEAD331E-D9CC-1091-D025-E2C3A7C5129A</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Descriere_problema_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Descriere_problema) &gt;= 2 AND REGEXP_LIKE ( Descriere_problema, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Locatie" id="E9C262BF-CB8F-39BC-1A44-BA5CC0689C92">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>3D4A14BD-60F8-4BC2-68F4-7DEB91EC9EAC</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Locatie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Locatie) &gt;= 2 AND REGEXP_LIKE ( Locatie, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_mecanic" id="B764AC48-13A6-5388-7B75-73BA2778DECC">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>052FE48E-F141-5C8A-D522-63C15A7FA45B</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7863DAF-67DE-9021-E76A-2AFEF53F513D" referredColumn="6D322735-8B8C-236E-DD0B-E4FF392A7BC0"/>
+</associations>
+</Column>
+<Column name="Nr_contract" id="9E05095D-0AF5-1DA6-1201-0FDEF41470B1">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>8392B339-D06E-0DEB-B753-04C8B1CBDF16</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB7DCF6B-2DF0-7B1C-189F-3B43682B9373" referredColumn="225DEB1D-B939-2BF8-6A5C-4C520CCFA5AE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C3FF44E-365F-C4DF-A027-605C7FC0D6FB" name="Problema_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>B4BCD8A0-A273-48A6-8DB5-0A956CA6A6F7</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8D74B38-F7ED-AED5-B33B-CE38FBC6A576"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F207FF90-1CFA-050A-9C22-C4942B23AF3C" name="Problema_Contract_FK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>28060AC7-0F22-7969-B667-C87318850B41</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E05095D-0AF5-1DA6-1201-0FDEF41470B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91F5EEE4-206C-6D0F-03F2-CF94D3E1785A" name="Problema_Mecanic_FK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>6D4C15FB-4480-9D9F-B47D-453FF5FD498D</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B764AC48-13A6-5388-7B75-73BA2778DECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

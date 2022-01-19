@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Client_contract_fk" directorySegmentName="seg_0" id="837B5F17-74AE-766A-E6DA-7EC660838D1A">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:30:37 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<sourcePk>E80F9F9E-1010-2DB1-0EA7-4A77B2049257</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>semneaza un</nameOnSource>
+<nameOnTarget>este semnat de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E830CBFD-2855-FA6B-436B-035497EC3BDF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>20BE6521-753D-D395-3960-3C91C4C83156</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

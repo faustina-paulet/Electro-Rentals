@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7863DAF-67DE-9021-E76A-2AFEF53F513D" containerWithKeyObject="44E67A7F-96FA-648F-871F-83098B1D8A62" localFKIndex="91F5EEE4-206C-6D0F-03F2-CF94D3E1785A" name="Problema_Mecanic_FK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>6D4C15FB-4480-9D9F-B47D-453FF5FD498D</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<referredTableLongName>Mecanic</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>08F6833B-8FE9-C190-5DBE-67AB4DF8BE04</referredTableID>
+<keyObject>067C362A-D1F2-C220-F6DC-724164CC6DB7</keyObject>
+<referredKeyID>067C362A-D1F2-C220-F6DC-724164CC6DB7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_mecanic</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

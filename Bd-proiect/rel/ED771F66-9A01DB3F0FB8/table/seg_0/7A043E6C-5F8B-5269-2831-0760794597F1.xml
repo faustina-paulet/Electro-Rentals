@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A043E6C-5F8B-5269-2831-0760794597F1" name="Vehicul">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>2EB248EB-C775-6818-325C-2F98AD23D919</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_vehicul" id="CB12A153-A81E-FBC8-78EA-88931428D9A9">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>683772A6-C2FD-2E18-1DE7-8C56EA82F6C3</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire_tip_vehicul" id="B1B86510-3856-5EE1-6E0A-165F6404FF75">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>81A984EE-1942-7501-8C75-CAE56900D704</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="bicicleta" description=""/>
+<valueDef value="tricicleta" description=""/>
+<valueDef value="trotineta" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_vehicul" id="878EBAB0-174A-740E-5795-D7D3429FC90C">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-02 21:28:59 UTC</createdTime>
+<generatorID>CE227E7E-D931-B652-DDAB-420467135F55</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74F79AA0-FAFC-CFDB-D4D9-676DC9D02BD9" name="Vehicul_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>2CFCAF01-D87F-6A16-8B41-4636509177FB</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB12A153-A81E-FBC8-78EA-88931428D9A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="505384EA-6E79-25C1-EF8B-483A31A0931A" name="Nr_vehicul_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:07:20 UTC</createdTime>
+<generatorID>886CD550-E9E5-4AAC-28DE-5A487D6D78D3</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="878EBAB0-174A-740E-5795-D7D3429FC90C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

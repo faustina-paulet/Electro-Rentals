@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E830CBFD-2855-FA6B-436B-035497EC3BDF" name="Client">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:20:00 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_client" id="525446A8-D7AC-4A6E-0895-70653FFFCB42">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:21:36 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume" id="DBAEDC27-91FC-8EFF-34C9-B61FC4021F3C">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:22:09 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<constraintName>x_Nume_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt;= 2 AND REGEXP_LIKE ( Nume, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prenume" id="1803FA54-4B98-6ECE-79EA-CE859B5010E4">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:23:39 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<constraintName>x_Prenume_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Prenume) &gt;= 2 AND REGEXP_LIKE ( Prenume, &apos;^[a-zA-Z ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="56E75B86-F3F3-6738-44A5-DD47AD46999D">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:23:58 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<constraintName>x_Email_client_ck </constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_telefon" id="B832B6FB-A45E-2F9A-DD07-C9236C581B73">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:24:26 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<constraintName>x_Nr_telefon_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nr_telefon) = 10 AND REGEXP_LIKE ( Nr_telefon,  &apos;^[0][:7:3:2][0-9 ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_nasterii" id="E5BEC2CB-313C-AF36-0B6D-DC93501C0E99">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:24:50 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E80F9F9E-1010-2DB1-0EA7-4A77B2049257" name="Client_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:22:04 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>525446A8-D7AC-4A6E-0895-70653FFFCB42</newElementsIDs>
+<usedAttributes>
+<attributeRef>525446A8-D7AC-4A6E-0895-70653FFFCB42</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B7F378AC-B230-47C4-136B-8B8B62A51B50" name="Email_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:03:12 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<newElementsIDs>56E75B86-F3F3-6738-44A5-DD47AD46999D</newElementsIDs>
+<usedAttributes>
+<attributeRef>56E75B86-F3F3-6738-44A5-DD47AD46999D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CD273450-4E46-4356-A03C-96D7804FEA61" name="Nr_telefon_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:04:12 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<newElementsIDs>B832B6FB-A45E-2F9A-DD07-C9236C581B73</newElementsIDs>
+<usedAttributes>
+<attributeRef>B832B6FB-A45E-2F9A-DD07-C9236C581B73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

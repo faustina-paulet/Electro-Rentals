@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2EB248EB-C775-6818-325C-2F98AD23D919" name="Vehicul">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:29:54 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_vehicul" id="683772A6-C2FD-2E18-1DE7-8C56EA82F6C3">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:30:01 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Denumire_tip_vehicul" id="81A984EE-1942-7501-8C75-CAE56900D704">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:30:31 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="bicicleta" description=""/>
+<valueDef value="tricicleta" description=""/>
+<valueDef value="trotineta" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_vehicul" id="CE227E7E-D931-B652-DDAB-420467135F55">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-02 21:27:35 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CFCAF01-D87F-6A16-8B41-4636509177FB" name="Vehicul_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:30:29 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>683772A6-C2FD-2E18-1DE7-8C56EA82F6C3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="886CD550-E9E5-4AAC-28DE-5A487D6D78D3" name="Nr_vehicul_uk">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 22:06:46 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<newElementsIDs>CE227E7E-D931-B652-DDAB-420467135F55</newElementsIDs>
+<usedAttributes>
+<attributeRef>CE227E7E-D931-B652-DDAB-420467135F55</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

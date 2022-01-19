@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89D390FA-C763-1B2A-224E-62A6530AF532" name="Detalii_vehicul">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>574D8339-B768-D701-1911-45426F208FDB</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Marca" id="760A1D9F-7D9D-CB9B-B64B-0218CC36BE81">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>B3589942-4E97-CE13-99E5-FEA4BC99F4B6</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_marca_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Marca) &gt;= 2 AND REGEXP_LIKE ( Marca, &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="An_fabricare" id="31C9A1A9-4930-64D1-6254-1CA2774A2BA8">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>73EC42E7-ACFD-3541-73EE-8E5ACD603B13</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_An_fabricare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="An_fabricare BETWEEN 2000 AND 2020 "/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Culoare" id="2544D7B4-78F5-70EF-44C8-8E96573970C3">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>10B961A2-751D-88F7-7380-C55691CA7E69</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<constraintName>x_Culoare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Culoare) &gt;= 2 AND REGEXP_LIKE ( culoare, &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Inchiriat" id="AC69327A-45B5-B37B-1257-B21F73A94908">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>A43CBEC1-167F-BE61-3CC0-AE1682FF645D</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="Da" description=""/>
+<valueDef value="Nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_vehicul" id="D38C7ACA-7B1E-7825-38ED-57DD66A637A7">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>26DAC568-BAC2-B35D-6129-B6D5C698FEA6</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAA6CF79-5FEB-E1C4-EF8A-61E8AA612F67" referredColumn="CB12A153-A81E-FBC8-78EA-88931428D9A9"/>
+</associations>
+</Column>
+<Column name="tarif" id="6C4DE555-C361-CB0A-7387-4812082109CC">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-21 22:45:15 UTC</createdTime>
+<generatorID>12071163-E86A-93BD-4C28-F3A740D2FE9E</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F524467F-AEFB-D9C2-25FA-42DC8DC61554" name="Detalii_vehicul__IDX">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2FF3D6F9-98F0-41F2-6622-A351B9B07714</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D38C7ACA-7B1E-7825-38ED-57DD66A637A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB28F142-74EF-C6B8-AF09-94F074C8E889" name="Detalii_vehicul_Vehicul_FK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-05 07:04:46 UTC</createdTime>
+<generatorID>2FF3D6F9-98F0-41F2-6622-A351B9B07714</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D38C7ACA-7B1E-7825-38ED-57DD66A637A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

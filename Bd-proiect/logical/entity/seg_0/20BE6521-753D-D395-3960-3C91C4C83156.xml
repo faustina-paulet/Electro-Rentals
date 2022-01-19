@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20BE6521-753D-D395-3960-3C91C4C83156" name="Contract">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:19:32 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nr_contract" id="CF05D2F7-EB96-87F8-F164-5A28FD397613">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:19:51 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_vehicul" id="E53F72B1-B042-F7AF-DCCF-8DD71BB8E78B">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 23:05:56 UTC</createdTime>
+<generatorID>90A1400C-1353-50F5-504E-66CF7C8ACC3A</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<referedAttribute>683772A6-C2FD-2E18-1DE7-8C56EA82F6C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_start_contract" id="425756C5-450D-2ACB-56D4-00CD1FD010E4">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-19 06:56:29 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_stop_contract" id="004237DD-7D71-2632-C3DE-9124E56B0154">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-19 06:57:26 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Data_stop_contract &gt; Data_start_contract"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tarif" id="829B0B5C-FEF8-2606-27AA-59C07F910F4B">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-19 06:58:03 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_client" id="999FE4A8-1196-1AC4-C528-3C9699EEDFBD">
+<createdBy>faust</createdBy>
+<createdTime>2021-12-22 16:30:37 UTC</createdTime>
+<generatorID>837B5F17-74AE-766A-E6DA-7EC660838D1A</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<referedAttribute>525446A8-D7AC-4A6E-0895-70653FFFCB42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Inchiriat" id="1B2235B0-E1DA-FC82-92A6-DF3E38FCCEF7">
+<createdBy>faust</createdBy>
+<createdTime>2022-01-17 10:17:21 UTC</createdTime>
+<generatorID>9D4A28A7-AFA0-1293-00C1-EAE0A898BDD7</generatorID>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="Da" description=""/>
+<valueDef value="Nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="841A664F-B93D-7B60-9EC9-35B1C6ACCF0C" name="Contract_PK">
+<createdBy>faust</createdBy>
+<createdTime>2021-11-02 22:29:23 UTC</createdTime>
+<ownerDesignName>Bd-proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED771F66-D381-B3E6-7789-9A01DB3F0FB8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CF05D2F7-EB96-87F8-F164-5A28FD397613</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
